@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон-експерт краси «Ольга» | Кременчук | Офіційний партнер L'Oréal & Kérastase</title>
+  <meta name="description" content="Преміальний салон-парикмахерська «Ольга» у Кременчуці. Модні стрижки, фарбування Airtouch/Balayage, лікування волосся Kérastase, кератинове випрямлення, нігтьовий сервіс. пр-т Свободи 61/17. Запис: +38 (068) 477-22-15">
+  
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-main: #0c0e12;
+      --bg-card: #131720;
+      --gold-primary: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-dark: #aa820a;
+    }
+    body {
+      background-color: var(--bg-main);
+      color: #e5e7eb;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8010 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #d4af37 0%, #aa8010 100%);
+    }
+    .gold-border {
+      border-color: rgba(212, 175, 55, 0.35);
+    }
+    .gold-glow {
+      box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.25);
+    }
+    .glass-nav {
+      background: rgba(12, 14, 18, 0.85);
+      backdrop-filter: blur(14px);
+    }
+    /* Comparison Slider */
+    .comparison-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .comparison-before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-500/30 selection:text-amber-200">
+
+  <!-- ========================================== -->
+  <!-- Top Announcement Bar                      -->
+  <!-- ========================================== -->
+  <div class="bg-gradient-to-r from-[#171b24] via-[#212735] to-[#171b24] border-b border-amber-500/20 text-xs py-2 px-4 text-center text-zinc-300 flex items-center justify-center space-x-3">
+    <span class="inline-flex items-center space-x-1.5 text-amber-300 font-semibold">
+      <span>✨</span>
+      <span>Офіційний салон-експерт L'Oréal Professionnel & Kérastase Paris у Кременчуці</span>
+    </span>
+    <span class="hidden md:inline text-zinc-500">|</span>
+    <span class="hidden md:inline text-zinc-400">пр-т Свободи, 61/17 · Щодня 09:00 - 19:00</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- Navigation Header                          -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-zinc-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-300 p-0.5 shadow-lg shadow-amber-500/10">
+          <div class="w-full h-full bg-[#0c0e12] rounded-[14px] flex items-center justify-center">
+            <span class="font-serif-luxury text-2xl font-bold text-amber-400 italic">O</span>
+          </div>
+        </div>
+        <div>
+          <div class="font-serif-luxury text-2xl font-bold tracking-wider text-white uppercase leading-none">
+            ОЛЬГА
+          </div>
+          <div class="text-[9px] uppercase tracking-[0.25em] text-amber-400 font-semibold mt-1">
+            SALON EXPERT · 1999
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium text-zinc-300">
+        <a href="#services" class="hover:text-amber-400 transition">Послуги</a>
+        <a href="#pricing" class="hover:text-amber-400 transition">Прайс-лист</a>
+        <a href="#transformations" class="hover:text-amber-400 transition">До / Після</a>
+        <a href="#masters" class="hover:text-amber-400 transition">Майстри</a>
+        <a href="#brands" class="hover:text-amber-400 transition">Бренди</a>
+        <a href="#contacts" class="hover:text-amber-400 transition">Контакти</a>
+      </nav>
+
+      <!-- Quick Action / Call & Booking -->
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <!-- Direct Phone -->
+        <a href="tel:+380684772215" class="hidden sm:flex items-center space-x-2 text-xs text-zinc-300 hover:text-white px-3.5 py-2 rounded-xl bg-zinc-900 border border-zinc-800 transition">
+          <span class="text-amber-400">📞</span>
+          <span class="font-semibold mono">+38 (068) 477-22-15</span>
+        </a>
+
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/beauty_salon_olga/" target="_blank" rel="noopener" class="p-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-pink-400 border border-zinc-800 transition" title="Наш Instagram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+
+        <!-- Booking CTA Button -->
+        <button onclick="openBookingModal()" class="gold-gradient-bg text-black font-bold px-5 py-2.5 rounded-xl text-xs uppercase tracking-wider transition hover:opacity-95 shadow-lg shadow-amber-500/20 cursor-pointer">
+          Онлайн-запис
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- HERO SECTION                               -->
+  <!-- ========================================== -->
+  <section class="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32">
+    <!-- Ambient glow circles -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[350px] h-[350px] bg-purple-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>КРЕМЕНЧУК · САЛОН-ЕКСПЕРТ ВІД 1999 РОКУ</span>
+          </div>
+
+          <h1 class="font-serif-luxury text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08]">
+            Твоя досконалість <br>
+            у кожному дотику <br>
+            <span class="gold-gradient-text italic">майстра-експерта.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl font-light">
+            Простір розкоші, здорового волосся та професійного стилю. Авторські стрижки, складні техніки фарбування <strong class="text-white font-medium">Airtouch & Balayage</strong>, молекулярне відновлення <strong class="text-white font-medium">Kérastase</strong> та преміальний нігтьовий сервіс.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button onclick="openBookingModal()" class="w-full sm:w-auto gold-gradient-bg text-black font-extrabold px-8 py-4 rounded-2xl text-xs uppercase tracking-widest hover:opacity-95 transition shadow-xl shadow-amber-500/25 cursor-pointer flex items-center justify-center space-x-2">
+              <span>🗓️</span>
+              <span>Записатися онлайн</span>
+            </button>
+            <a href="https://t.me/olga_salon_bot" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-2xl text-xs uppercase tracking-widest font-bold text-zinc-200 hover:text-white bg-zinc-900/90 border border-zinc-800 hover:border-amber-500/40 transition flex items-center justify-center space-x-2">
+              <span>💬</span>
+              <span>Консультація у Telegram</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Grid -->
+          <div class="pt-8 border-t border-zinc-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+            <div class="p-3 bg-zinc-900/50 rounded-xl border border-zinc-800/80">
+              <div class="font-serif-luxury text-2xl font-bold text-amber-300">25+</div>
+              <div class="text-[11px] text-zinc-400 uppercase tracking-wider mt-0.5">Років досвіду</div>
+            </div>
+            <div class="p-3 bg-zinc-900/50 rounded-xl border border-zinc-800/80">
+              <div class="font-serif-luxury text-2xl font-bold text-amber-300">100%</div>
+              <div class="text-[11px] text-zinc-400 uppercase tracking-wider mt-0.5">Оригінал L'Oréal</div>
+            </div>
+            <div class="p-3 bg-zinc-900/50 rounded-xl border border-zinc-800/80">
+              <div class="font-serif-luxury text-2xl font-bold text-amber-300">15 000+</div>
+              <div class="text-[11px] text-zinc-400 uppercase tracking-wider mt-0.5">Задоволених гостей</div>
+            </div>
+            <div class="p-3 bg-zinc-900/50 rounded-xl border border-zinc-800/80">
+              <div class="font-serif-luxury text-2xl font-bold text-amber-300">4.9 ★</div>
+              <div class="text-[11px] text-zinc-400 uppercase tracking-wider mt-0.5">Рейтинг довіри</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md rounded-3xl p-3 bg-gradient-to-b from-amber-500/30 via-zinc-800/20 to-transparent border border-amber-500/30 gold-glow">
+            <div class="relative overflow-hidden rounded-2xl bg-zinc-950 aspect-[4/5] flex flex-col justify-end p-6">
+              <!-- Background Stylist Image -->
+              <img 
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" 
+                alt="Салон краси Ольга Кременчук" 
+                class="absolute inset-0 w-full h-full object-cover opacity-80 hover:scale-105 transition duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+              <!-- Floating Card Widget Inside Image -->
+              <div class="relative z-10 bg-black/80 backdrop-blur-md p-4 rounded-2xl border border-amber-500/40 space-y-2">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-bold text-white uppercase tracking-wider">Зараз відчинено</span>
+                  </div>
+                  <span class="text-[11px] text-amber-400 font-mono">до 19:00</span>
+                </div>
+                <p class="text-xs text-zinc-300">
+                  Арт-директор <strong class="text-white">Ольга Ляхненко</strong> та топ-майстри ведуть прийом за попереднім записом.
+                </p>
+                <div class="pt-1 flex items-center justify-between text-[11px] text-zinc-400 border-t border-zinc-800">
+                  <span>м. Кременчук, пр-т Свободи 61/17</span>
+                  <a href="tel:+380684772215" class="text-amber-400 font-bold hover:underline">Подзвонити ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SERVICES SECTION WITH CATEGORY TABS        -->
+  <!-- ========================================== -->
+  <section id="services" class="py-20 bg-[#0e1117] border-t border-zinc-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <div class="text-xs uppercase tracking-[0.2em] font-semibold text-amber-400">ПЕРЕЛІК ПОСЛУГ</div>
+        <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-white">
+          Бездоганний догляд за вашим образом
+        </h2>
+        <p class="text-sm text-zinc-400 leading-relaxed font-light">
+          Використовуємо виключно преміальну європейську косметику: L'Oréal Professionnel (Inoa, Dialight), Kérastase Paris, Helen Seward Milano.
+        </p>
+      </div>
+
+      <!-- Services Category Filters -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+        <button onclick="filterServices('all')" class="category-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-400 text-black transition cursor-pointer" data-cat="all">
+          Всі послуги
+        </button>
+        <button onclick="filterServices('hair')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 transition cursor-pointer" data-cat="hair">
+          Стрижки & Укладки
+        </button>
+        <button onclick="filterServices('color')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 transition cursor-pointer" data-cat="color">
+          Складне фарбування
+        </button>
+        <button onclick="filterServices('care')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 transition cursor-pointer" data-cat="care">
+          Лікування & Кератин
+        </button>
+        <button onclick="filterServices('nail')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 transition cursor-pointer" data-cat="nail">
+          Нігтьовий сервіс
+        </button>
+      </div>
+
+      <!-- Services Grid -->
+      <div id="services-grid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="hair">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">✂️</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">від 45 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Жіноча модельна стрижка
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Індивідуальний підбір форми з урахуванням структури волосся, миття голови з ритуалом догляду та укладка за формою.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 450 ₴</span>
+            <button onclick="selectServiceForBooking('Жіноча модельна стрижка', '450 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="color">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🎨</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">від 180 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Фарбування Airtouch & Balayage
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Плавні переходи, м'яке відростання коренів до 6-8 місяців. Робота на барвниках преміум-лінійки L'Oréal Professionnel.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 1800 ₴</span>
+            <button onclick="selectServiceForBooking('Фарбування Airtouch & Balayage', '1800 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="care">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">✨</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">60 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Ритуал Kérastase Fusio-Dose
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Миттєве перевтілення якості волосся: зміцнення, дзеркальний блиск, живлення та захист від ламкості.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 850 ₴</span>
+            <button onclick="selectServiceForBooking('Ритуал Kérastase Fusio-Dose', '850 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="care">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">💆‍♀️</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">150 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Кератинове випрямлення Helen Seward
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Ідеальна гладкість, запаювання посічених кінців та захист від пушіння у вологу погоду на термін до 5 місяців.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 2200 ₴</span>
+            <button onclick="selectServiceForBooking('Кератинове випрямлення Helen Seward', '2200 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="hair">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">💈</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">40 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Чоловіча стрижка & Моделювання бороди
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Техніки чоловічих стрижок Володимира та провідних барбер-шкіл. Чіткі контури, догляд оліями та стайлінг.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 400 ₴</span>
+            <button onclick="selectServiceForBooking('Чоловіча стрижка & Борода', '400 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card bg-[#141822] rounded-3xl p-6 border border-zinc-800/90 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group" data-category="nail">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">💅</span>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">90 хв</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white mt-4 group-hover:text-amber-300 transition">
+              Манікюр + Покриття гель-лаком
+            </h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Безпечний комбінований або апаратний манікюр, вирівнювання нігтьової пластини, преміум-палітра та стійкість від 3 тижнів.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <span class="font-bold text-white text-base font-serif-luxury">від 600 ₴</span>
+            <button onclick="selectServiceForBooking('Манікюр + Гель-лак', '600 ₴')" class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider cursor-pointer">
+              Записатись →
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- INTERACTIVE BEFORE / AFTER SLIDER          -->
+  <!-- ========================================== -->
+  <section id="transformations" class="py-20 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <div class="text-xs uppercase tracking-[0.2em] font-semibold text-amber-400">РЕЗУЛЬТАТИ РОБОТИ</div>
+        <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-white">
+          Трансформація: До та Після
+        </h2>
+        <p class="text-xs sm:text-sm text-zinc-400">
+          Потягніть бігунок по центру, щоб оцінити якість фарбування Airtouch та відновлення структури волосся
+        </p>
+      </div>
+
+      <!-- Before/After Slider Component -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden border border-amber-500/30 gold-glow aspect-[16/10] bg-black comparison-container" id="slider-box">
+        
+        <!-- After Image (Background) -->
+        <img 
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" 
+          alt="Після фарбування та укладки" 
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        >
+        <div class="absolute top-4 right-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-amber-300 uppercase tracking-wider border border-amber-500/30">
+          ПІСЛЯ (Airtouch)
+        </div>
+
+        <!-- Before Image (Overlay clipped) -->
+        <div class="comparison-before" id="slider-before">
+          <img 
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" 
+            alt="До фарбування" 
+            class="absolute inset-0 w-[800px] h-full object-cover filter grayscale contrast-125 pointer-events-none"
+          >
+          <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-zinc-400 uppercase tracking-wider border border-zinc-700">
+            ДО ПРОЦЕДУРИ
+          </div>
+        </div>
+
+        <!-- Interactive Divider Handle -->
+        <div class="absolute top-0 bottom-0 w-1 bg-amber-400 shadow-[0_0_15px_rgba(212,175,55,0.8)] cursor-ew-resize flex items-center justify-center -ml-0.5" id="slider-handle" style="left: 50%;">
+          <div class="w-8 h-8 rounded-full bg-amber-400 text-black flex items-center justify-center font-bold text-xs shadow-xl cursor-ew-resize">
+            ⇄
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- ART-DIRECTOR & TEAM                        -->
+  <!-- ========================================== -->
+  <section id="masters" class="py-20 bg-[#0e1117] border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Photo of Art Director -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden border border-amber-500/40 p-2 bg-gradient-to-b from-amber-500/20 to-transparent">
+            <div class="relative rounded-2xl overflow-hidden aspect-[3/4]">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+                alt="Ольга Ляхненко Арт-директор" 
+                class="w-full h-full object-cover"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 text-center">
+                <span class="text-xs uppercase tracking-widest text-amber-300 font-semibold block">Арт-директор салону</span>
+                <span class="font-serif-luxury text-2xl font-bold text-white">Ольга Ляхненко</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio & Qualifications -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="text-xs uppercase tracking-[0.2em] font-semibold text-amber-400">НАША КОМАНДА</div>
+          <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-white leading-tight">
+            Міжнародні стандарти краси у серці Кременчука
+          </h2>
+          <p class="text-sm text-zinc-300 leading-relaxed font-light">
+            Наш провідний майстер та арт-директор <strong class="text-white font-medium">Ольга Ляхненко</strong> пройшла навчання на майстер-класах світових стилістів, включаючи Франко Курлетто (Franco Curletto), та є офіційним експертом L'Oréal Professionnel.
+          </p>
+          <p class="text-sm text-zinc-400 leading-relaxed font-light">
+            Кожен майстер салону регулярно підвищує кваліфікацію в академіях Києва та Європи, володіє сучасними анатомічними техніками жіночих та чоловічих стрижок, безпечним блондуванням та салонним відновленням.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            <div class="p-4 rounded-2xl bg-zinc-900 border border-zinc-800">
+              <span class="text-amber-400 font-bold block text-sm">🏆 Franco Curletto</span>
+              <span class="text-[11px] text-zinc-400">Сертифікований майстер-клас міжнародного рівня</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-zinc-900 border border-zinc-800">
+              <span class="text-amber-400 font-bold block text-sm">💎 L'Oréal Expert</span>
+              <span class="text-[11px] text-zinc-400">Офіційний статус салон-експерт</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-zinc-900 border border-zinc-800">
+              <span class="text-amber-400 font-bold block text-sm">🌿 Kérastase Paris</span>
+              <span class="text-[11px] text-zinc-400">Повний спектр фірмових спа-ритуалів</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openBookingModal()" class="gold-gradient-bg text-black font-extrabold px-8 py-3.5 rounded-2xl text-xs uppercase tracking-widest hover:opacity-95 transition shadow-lg shadow-amber-500/20 cursor-pointer">
+              Записатися до Ольги Ляхненко
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- BRANDS SECTION                             -->
+  <!-- ========================================== -->
+  <section id="brands" class="py-16 bg-[#0c0e12] border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold mb-8">
+        ОФІЦІЙНІ БРЕНДИ-ПАРТНЕРИ САЛОНУ
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center opacity-70">
+        <div class="text-center font-serif-luxury text-2xl font-bold tracking-widest text-zinc-300">
+          L'ORÉAL <br><span class="text-[10px] tracking-[0.3em] font-sans font-normal text-zinc-500">PROFESSIONNEL</span>
+        </div>
+        <div class="text-center font-serif-luxury text-2xl font-bold tracking-widest text-zinc-300">
+          KÉRASTASE <br><span class="text-[10px] tracking-[0.3em] font-sans font-normal text-zinc-500">PARIS</span>
+        </div>
+        <div class="text-center font-serif-luxury text-2xl font-bold tracking-widest text-zinc-300">
+          HELEN SEWARD <br><span class="text-[10px] tracking-[0.3em] font-sans font-normal text-zinc-500">MILANO</span>
+        </div>
+        <div class="text-center font-serif-luxury text-2xl font-bold tracking-widest text-zinc-300">
+          OLAPLEX <br><span class="text-[10px] tracking-[0.3em] font-sans font-normal text-zinc-500">BOND BUILDING</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- LOCATION, WORKING HOURS & CONTACTS         -->
+  <!-- ========================================== -->
+  <section id="contacts" class="py-20 bg-[#0e1117] border-t border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="text-xs uppercase tracking-[0.2em] font-semibold text-amber-400">ЛОКАЦІЯ ТА КОНТАКТИ</div>
+          <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-white leading-tight">
+            Чекаємо вас у гості
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
+            Затишна атмосфера, ароматна кава та бездоганний сервіс. Будемо раді підкреслити вашу природну красу.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <!-- Address -->
+            <div class="flex items-start space-x-3.5 p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800">
+              <span class="text-xl">📍</span>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-zinc-400 font-semibold block">Адреса</span>
+                <span class="text-sm font-medium text-white">м. Кременчук, проспект Свободи, 61/17</span>
+                <span class="text-[11px] text-zinc-500 block mt-0.5">Зручний паркінг поруч із салоном</span>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="flex items-start space-x-3.5 p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800">
+              <span class="text-xl">⏰</span>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-zinc-400 font-semibold block">Графік роботи</span>
+                <span class="text-sm font-medium text-white">Щодня з 09:00 до 19:00</span>
+                <span class="text-[11px] text-zinc-500 block mt-0.5">Без перерви та вихідних</span>
+              </div>
+            </div>
+
+            <!-- Phone & Messengers -->
+            <div class="flex items-start space-x-3.5 p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800">
+              <span class="text-xl">📞</span>
+              <div class="space-y-2">
+                <span class="text-xs uppercase tracking-wider text-zinc-400 font-semibold block">Телефон & Месенджери</span>
+                <a href="tel:+380684772215" class="text-base font-bold text-amber-400 hover:underline block mono">
+                  +38 (068) 477-22-15
+                </a>
+                <div class="flex items-center space-x-2 pt-1">
+                  <a href="viber://chat?number=%2B380684772215" class="px-3 py-1.5 rounded-lg bg-purple-600/20 text-purple-300 border border-purple-500/40 text-xs font-bold hover:bg-purple-600/30 transition">
+                    Viber
+                  </a>
+                  <a href="https://t.me/olga_salon_bot" class="px-3 py-1.5 rounded-lg bg-blue-600/20 text-blue-300 border border-blue-500/40 text-xs font-bold hover:bg-blue-600/30 transition">
+                    Telegram
+                  </a>
+                  <a href="https://www.instagram.com/beauty_salon_olga/" target="_blank" class="px-3 py-1.5 rounded-lg bg-pink-600/20 text-pink-300 border border-pink-500/40 text-xs font-bold hover:bg-pink-600/30 transition">
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Embed Card -->
+        <div class="lg:col-span-7 h-full">
+          <div class="rounded-3xl overflow-hidden border border-zinc-800 h-[380px] sm:h-[420px] relative shadow-2xl">
+            <!-- Google Maps iframe for Kremenchuk Prospect Svobody 61/17 -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.639739569766!2d33.41872147668615!3d49.07449557136338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75323577328bf%3A0x6b2454659b8be009!2zcHItdC4gU3ZvYm9keSwgNjEvMTcsIEtyZW1lbmNodWssIFBvbHRhdnNrYSBvYmxhc3QsIDM5NjAw!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua" 
+              width="100%" 
+              height="100%" 
+              style="border:0; filter: invert(90%) hue-rotate(180deg);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="absolute bottom-4 right-4 bg-black/90 backdrop-blur-md p-3 rounded-xl border border-zinc-800 text-xs text-zinc-300">
+              <a href="https://maps.google.com/?q=проспект+Свободи+61/17+Кременчук" target="_blank" class="text-amber-400 font-bold hover:underline flex items-center space-x-1">
+                <span>Прокласти маршрут на Google Картах ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="py-10 bg-[#080a0d] border-t border-zinc-900 text-center text-xs text-zinc-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-serif-luxury text-base text-zinc-300 font-bold">Салон-експерт краси «Ольга»</span> · Кременчук, 1999–2026
+      </div>
+      <div class="flex items-center space-x-4 text-zinc-400">
+        <a href="#services" class="hover:text-amber-400">Послуги</a>
+        <a href="#pricing" class="hover:text-amber-400">Ціни</a>
+        <a href="https://www.instagram.com/beauty_salon_olga/" target="_blank" class="hover:text-pink-400">Instagram</a>
+        <a href="tel:+380684772215" class="hover:text-amber-400">Телефон</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODAL: ONLINE APPOINTMENT BOOKING          -->
+  <!-- ========================================== -->
+  <div id="modal-booking" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-3 sm:p-6">
+    <div class="bg-[#141822] border border-amber-500/40 rounded-3xl max-w-lg w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden gold-glow">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-zinc-800 flex items-center justify-between bg-black/60">
+        <div>
+          <h3 class="font-serif-luxury text-2xl font-bold text-white">
+            Онлайн-запис на візит
+          </h3>
+          <p class="text-xs text-amber-400">Салон «Ольга» · м. Кременчук</p>
+        </div>
+        <button onclick="closeBookingModal()" class="text-zinc-400 hover:text-white p-2 rounded-xl text-lg transition cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <!-- Form Body -->
+      <form id="form-booking" class="p-6 overflow-y-auto space-y-4">
+        
+        <!-- Select Service -->
+        <div>
+          <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Оберіть послугу</label>
+          <select id="booking-service" class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3.5 py-3 text-xs text-white focus:border-amber-400 focus:outline-none">
+            <option value="Жіноча модельна стрижка">Жіноча модельна стрижка (від 450 ₴)</option>
+            <option value="Фарбування Airtouch / Balayage">Фарбування Airtouch / Balayage (від 1800 ₴)</option>
+            <option value="Тонування та фарбування L'Oréal">Тонування та фарбування L'Oréal (від 950 ₴)</option>
+            <option value="Ритуал Kérastase Fusio-Dose">Спа-ритуал Kérastase Fusio-Dose (від 850 ₴)</option>
+            <option value="Кератинове випрямлення Helen Seward">Кератинове випрямлення Helen Seward (від 2200 ₴)</option>
+            <option value="Чоловіча стрижка та борода">Чоловіча стрижка та борода (від 400 ₴)</option>
+            <option value="Манікюр та гель-лак">Манікюр та покриття гель-лаком (від 600 ₴)</option>
+            <option value="Smart-педикюр">Smart-педикюр естетичний (від 750 ₴)</option>
+          </select>
+        </div>
+
+        <!-- Select Master -->
+        <div>
+          <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Бажаний спеціаліст</label>
+          <select id="booking-master" class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3.5 py-3 text-xs text-white focus:border-amber-400 focus:outline-none">
+            <option value="Будь-який вільний топ-майстер">Будь-який вільний топ-майстер</option>
+            <option value="Ольга Ляхненко (Арт-директор)">Ольга Ляхненко (Арт-директор)</option>
+            <option value="Топ-колорист L'Oréal">Топ-колорист L'Oréal</option>
+            <option value="Майстер чоловічих стрижок / Барбер">Майстер чоловічих стрижок / Барбер</option>
+            <option value="Топ-майстер нігтьового сервісу">Топ-майстер нігтьового сервісу</option>
+          </select>
+        </div>
+
+        <!-- Date & Time Row -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Бажана дата</label>
+            <input type="date" id="booking-date" required class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3 py-2.5 text-xs text-white focus:border-amber-400 focus:outline-none">
+          </div>
+          <div>
+            <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Час</label>
+            <select id="booking-time" class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3 py-2.5 text-xs text-white focus:border-amber-400 focus:outline-none">
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="14:00" selected>14:00</option>
+              <option value="16:00">16:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Client Name -->
+        <div>
+          <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Ваше ім'я</label>
+          <input type="text" id="booking-name" placeholder="Наприклад: Олена" required class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3.5 py-3 text-xs text-white focus:border-amber-400 focus:outline-none">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1.5">Номер телефону</label>
+          <input type="tel" id="booking-phone" placeholder="+38 (0__) ___-__-__" required class="w-full bg-black/70 border border-zinc-800 rounded-xl px-3.5 py-3 text-xs text-white mono focus:border-amber-400 focus:outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-black font-extrabold text-xs uppercase tracking-widest hover:opacity-95 transition shadow-lg shadow-amber-500/20 cursor-pointer mt-2">
+          Підтвердити запис
+        </button>
+
+        <p class="text-[11px] text-zinc-500 text-center leading-relaxed">
+          Адміністратор зв'яжеться з вами протягом 10 хвилин для підтвердження часу.
+        </p>
+
+      </form>
+
+      <!-- Success Confirmation State (Hidden by default) -->
+      <div id="booking-success" class="hidden p-8 text-center space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-3xl flex items-center justify-center mx-auto">
+          ✓
+        </div>
+        <h4 class="font-serif-luxury text-3xl font-bold text-white">Запис успішно оформлено!</h4>
+        <p id="booking-success-details" class="text-xs text-zinc-300 leading-relaxed max-w-sm mx-auto"></p>
+        <div class="pt-3 flex flex-col gap-2">
+          <a id="btn-success-viber" href="#" class="w-full py-3 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 border border-purple-500/40 text-xs font-bold transition">
+            Підтвердити у Viber ↗
+          </a>
+          <button onclick="closeBookingModal()" class="w-full py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold transition cursor-pointer">
+            Закрити вікно
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 bg-amber-400 text-black font-bold text-xs px-5 py-3 rounded-2xl shadow-2xl transition transform translate-y-10 opacity-0 pointer-events-none"></div>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT CONTROLLERS                     -->
+  <!-- ========================================== -->
+  <script>
+    // Set default date to tomorrow
+    const dateInput = document.getElementById('booking-date');
+    if (dateInput) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+    }
+
+    // Modal Controls
+    const modalBooking = document.getElementById('modal-booking');
+    const formBooking = document.getElementById('form-booking');
+    const bookingSuccess = document.getElementById('booking-success');
+
+    function openBookingModal() {
+      if (modalBooking) {
+        modalBooking.classList.remove('hidden');
+        formBooking.classList.remove('hidden');
+        bookingSuccess.classList.add('hidden');
+      }
+    }
+
+    function closeBookingModal() {
+      if (modalBooking) modalBooking.classList.add('hidden');
+    }
+
+    function selectServiceForBooking(serviceName, price) {
+      openBookingModal();
+      const select = document.getElementById('booking-service');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(serviceName)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+
+    // Services Filter Tabs
+    function filterServices(category) {
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          btn.className = 'category-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-400 text-black transition cursor-pointer';
+        } else {
+          btn.className = 'category-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 transition cursor-pointer';
+        }
+      });
+
+      document.querySelectorAll('.service-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Interactive Before/After Slider
+    const sliderBox = document.getElementById('slider-box');
+    const sliderBefore = document.getElementById('slider-before');
+    const sliderHandle = document.getElementById('slider-handle');
+
+    if (sliderBox && sliderBefore && sliderHandle) {
+      let isDragging = false;
+
+      function updateSlider(x) {
+        const rect = sliderBox.getBoundingClientRect();
+        let posX = x - rect.left;
+        if (posX < 0) posX = 0;
+        if (posX > rect.width) posX = rect.width;
+        const percentage = (posX / rect.width) * 100;
+        sliderBefore.style.width = percentage + '%';
+        sliderHandle.style.left = percentage + '%';
+      }
+
+      sliderBox.addEventListener('mousedown', (e) => { isDragging = true; updateSlider(e.clientX); });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+      window.addEventListener('mousemove', (e) => { if (isDragging) updateSlider(e.clientX); });
+
+      sliderBox.addEventListener('touchstart', (e) => { isDragging = true; updateSlider(e.touches[0].clientX); });
+      window.addEventListener('touchend', () => { isDragging = false; });
+      window.addEventListener('touchmove', (e) => { if (isDragging) updateSlider(e.touches[0].clientX); });
+    }
+
+    // Handle Form Submit
+    if (formBooking) {
+      formBooking.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const service = document.getElementById('booking-service').value;
+        const master = document.getElementById('booking-master').value;
+        const date = document.getElementById('booking-date').value;
+        const time = document.getElementById('booking-time').value;
+        const name = document.getElementById('booking-name').value;
+        const phone = document.getElementById('booking-phone').value;
+
+        // Show confirmation view
+        formBooking.classList.add('hidden');
+        bookingSuccess.classList.remove('hidden');
+        
+        document.getElementById('booking-success-details').innerHTML = `
+          Дякуємо, <strong>${name}</strong>!<br>
+          Ваша заявка на послугу: <em>${service}</em><br>
+          Майстер: <strong>${master}</strong><br>
+          Час візиту: <strong>${date} о ${time}</strong>.<br>
+          Адміністратор салону «Ольга» зв'яжеться з вами за номером <strong>${phone}</strong>.
+        `;
+
+        const viberText = encodeURIComponent(`Доброго дня! Хочу підтвердити онлайн-запис у салон Ольга: ${service}, ${date} о ${time}, ${name} (${phone})`);
+        document.getElementById('btn-success-viber').href = `viber://chat?number=%2B380684772215&draft=${viberText}`;
+      });
+    }
+
+    // Toast Notification
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.remove('translate-y-10', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-10', 'opacity-0');
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
